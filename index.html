@@ -403,7 +403,54 @@
 
 </body>
   <!--script-->
+    <section class="dove-trovarci">
+      <h2>Dove trovarci</h2>
+      <div id="mappa" style="width: 100%; height: auto;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11324.25390519549!2d8.341747!3d44.799895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478785885ec193d9%3A0x5f2482b27e8b4adc!2sPerocchio%20Vini!5e0!3m2!1sit!2sit!4v1689029123633!5m2!1sit!2sit" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- form-->
 
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Messaggio:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <!--informativa privacy checkbox-->
+
+        <p class="privacy-text">Leggi e accetta l'informativa sulla privacy:</p>
+
+        <div>
+          <input type="checkbox" id="privacy-checkbox">
+          <label for="privacy-checkbox">Accetto l'informativa sulla privacy</label>
+        </div>
+        <div class="spacer"></div>
+        <button type="submit" id="submit-btn">Invia</button>
+
+        <!--informativa privacy checkbox fine-->
+
+        <!--fine form-->
+
+        <div class="spacer"></div>
+    </div>
+
+    </div>
+    <!--cookies-->
+    <div class="cookie-banner">
+      <span class="cookie-message">Questo sito utilizza i cookie per garantire una migliore esperienza di navigazione. Accetta i cookie per continuare.</span>
+      <button class="cookie-accept">Accetta</button>
+    </div>
     <!--hamburger-menu-->
     <script>
       let item = document.querySelector(".icon-hamburger");
