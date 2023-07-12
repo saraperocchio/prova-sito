@@ -1,150 +1,376 @@
 <!DOCTYPE html>
-<html>
 <html lang="it">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perocchiovini.it</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
-  <link rel="icon" href="https://www.perocchiovini.com/graphics/logo-perocchiovini.png" type="image/x-icon">
-  <link rel="https://www.perocchiovini.com/graphics/logo-perocchiovini.png" type="image/x-icon">
+ 
 
-</head>
+  <title>Perocchiovini.it</title>
+  <!--link esterni-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" href="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/logo-perocchiovini.png?raw=true" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!--elementi personali-->
+  <link rel="stylesheet" href="style.css">
 
 <body>
-  <header>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon"></div>
-    </div>
-    <nav>
-      <div class="header-container">
+
+  <!--header starts-->
+  <header class="header">
+    <!--nav bar-->
+    <div class="header-content">
+      <a class="header-logo" href="#">
         <div class="logo-container">
-
+          <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/logo-perocchiovini.png?raw=true" alt="azienda agricola Perocchio">
         </div>
-        <ul>
-          <div class="logo">
-            <img src="https://www.perocchiovini.com/graphics/logo-perocchiovini.png" alt="logo">
-          </div>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#prodotti">Prodotti</a></li>
-          <li><a href="#">Servizi</a></li>
-          <li><a href="#chi-siamo">Chi Siamo</a></li>
-          <li><a href="#informazioni-azienda">Contatti</a></li>
-          <li><a href="#">Gallery</a></li>
-        </ul>
-    </nav>
-
-  </header>
-
-  <div id="home">
-    <div class="slider-container">
-      <div class="slider">
-
-        <img src="https://github.com/saraperocchio/Test-web-design/blob/main/images/slider%201.jpg?raw=true" alt="">
-        <img src="https://github.com/saraperocchio/Test-web-design/blob/main/images/slider%202.jpg?raw=true" alt="">
-        <img src="https://github.com/saraperocchio/Test-web-design/blob/main/images/slider%203.jpg?raw=true" alt="">
-        <div class="gray-box">
-          <h2>L'azienda agricola Perocchio</h2>
-          <p>L’azienda Agricola Perocchio da tre generazioni vinifica e imbottiglia i suoi vini ottenuti dalle proprie uve utilizzando un metodo di coltivazione antico e tradizionale, a partire dalla potatura alla vendemmia; tutte le uve vengono raccolte manualmente, rispettando la fase di pressatura dei mosti, i tempi necessari per la fermentazione e i processi di affinamento, riuscendo ad ottenere, grazie ad un accurato lavoro, vini di grande struttura e corposità.
-
-            I terreni dell’azienda sorgono nel cuore del Monferrato, in particolare nei Comuni di Vaglio Serra e Vinchio (AT), zone rinomate come tra le migliori del Piemonte per i vini D.O.C.G. e D.O.C. di produzione.</p>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#carousel">Home</a></li>
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#prodotti">Prodotti</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+     </div>
+        <div class="icon-hamburger">
+          <span></span>
+          <span></span>
         </div>
       </div>
-      <button class="slider-button prev-button">&#10094;</button>
-      <button class="slider-button next-button">&#10095;</button>
     </div>
-  </div>
-  <div class="slider-navigation">
-    <button class="prev-btn">&lt;</button>
-    <button class="next-btn">&gt;</button>
-  </div>
+  </header>
+  <!--header ends-->
+  <!--slider starts-->
+  <div id="carousel" class="carousel carousel slide d-flex" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/slider%201.jpg?raw=true" class="d-block w-100" alt="immagine 1">
+        <div class="carousel-caption d-none d-md-block justify-content-center">
+          <h5>Ogni goccia racconta la storia delle nostre terre e dell'arte della vinificazione</h5>
+          <div class="spacer"></div>
+          <a href="#prodotti" class="button">scopri di più</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/slider%202.jpg?raw=true" class="d-block w-100" alt="immagine 2">
+        <div class="carousel-caption d-none d-md-block justify-content-center ">
+          <h5>Dalla vigna al bicchiere, ogni passo è curato con attenzione per offrirti vini d'eccellenza</h5>
+          <div class="spacer"></div>
+          <a href="#chi-siamo" class="button">scopri di più</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/slider%203.jpg?raw=true" class="d-block w-100" alt="immagine 3">
+        <div class="carousel-caption d-none d-md-block justify-content-center">
+          <h5>La nostra passione per il vino si traduce in bottiglie che raccontano la nostra storia</h5>
+          <div class="spacer"></div>
+          <a href="#chi-siamo" class="button">scopri di più</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-  <main>
-    <div id=chi-siamo>
-      <div class="container">
-        <div class="box">
-          <h2>La nostra storia</h2>
+  <!--slider ends-->
+
+  <!--chi siamo-->
+  <section id="chi-siamo">
+    <div class="spacer"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+
+          <h1>La nostra storia</h1>
+          </d>
+
           <p>L’azienda Agricola Perocchio da tre generazioni vinifica e imbottiglia i suoi vini ottenuti dalle proprie uve utilizzando un metodo di coltivazione antico e tradizionale, a partire dalla potatura alla vendemmia; tutte le uve vengono raccolte manualmente, rispettando la fase di pressatura dei mosti, i tempi necessari per la fermentazione e i processi di affinamento, riuscendo ad ottenere, grazie ad un accurato lavoro, vini di grande struttura e corposità.
-
-            I terreni dell’azienda sorgono nel cuore del Monferrato, in particolare nei Comuni di Vaglio Serra e Vinchio (AT), zone rinomate come tra le migliori del Piemonte per i vini D.O.C.G. e D.O.C. di produzione.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <p>I terreni dell’azienda sorgono nel cuore del Monferrato, in particolare nei Comuni di Vaglio Serra e Vinchio (AT), zone rinomate come tra le migliori del Piemonte per i vini D.O.C.G. e D.O.C. di produzione.
 
             Questi territori, inoltre, dal 2014 sono stati riconosciuti ed iscritti dall’ Unesco nella lista dei luoghi Patrimonio Mondiale dell’umanità, con la denominazione di “Paesaggi Vitivinicoli di Langhe, Roero e Monferrato”.
 
             La nostra azienda a conduzione familiare, comprende circa 17 ettari di terreno vitato dal quale si ricavano vini genuini che esprimono tutte le caratteristiche e le note tipiche delle diverse annate da cui provengono le uve.</p>
         </div>
       </div>
-      <section id="prodotti">
-        <div class="prodotti">
-          <h2>I nostri vini</h2>
-
-          <div class="row">
-            <div class="col-md-4">
-              <img src=https://github.com/saraperocchio/Test-web-design/blob/main/images/vini/barbera-dasti-la-ca-da-ruej.jpg?raw=true alt="Prodotto 1">
-              <h3>Barbera d'Asti D.O.C.G:"La Cà da Ruèj"</h3>
-              <p>Zona di produzione: Vaglio Serra e Vinchio (AT).
-                Vitigno: 100% Barbera .
-                Gradazione alcolica: 13,5 % vol.
-                Vinificazione: vinificazione attenta e controllata in botti di cemento vetrificato.
-                Caratteristiche organolettiche
-                Colore - Tipologia: rosso intenso con riflessi porpora; fermo.
-                Profumo: intensa vinosità, inebriante con caratteristiche dominanti fruttate di ciliegia, liquirizia, prugna e more.
-                Sapore: tannico, corposo, asciutto, persistente, con una acidità ben equilibrata e senza spigolatura.
-
-                Abbinamenti - Affinità gastronomiche: vino di grande versatilità, si abbina ai piatti della grande cucina tradizionale, ai piatti di carne, selvaggina, ideale con formaggi stagionati o erborinati.
-                Temperatura di degustazione: servire a 16-18°C .</p>
-            </div>
-            <div class="col-md-4">
-              <img src="https://github.com/saraperocchio/Test-web-design/blob/main/images/vini/barbera-del-monferrato.jpg?raw=true" alt="Prodotto 2">
-              <h3>Barbera del Monferrato D.O.C.</h3>
-              <p>Zona di produzione: Vaglio Serra e Vinchio (AT).
-                Vitigno: 100% Barbera.
-                Gradazione alcolica: 13,5 % vol.
-                Vinificazione: vinificazione attenta e controllata in botti di cemento vetrificato.
-
-                Caratteristiche organolettiche
-                Colore - Tipologia: rosso rubino; leggermente frizzante.
-                Profumo: vinoso e intenso con note fruttate.
-                Sapore: asciutto, strutturato e di grande equilibrio.
-
-                Abbinamenti - Affinità gastronomiche: accompagna egregiamente antipasti tradizionali, primi piatti importanti, carni rosse e grigliate.
-                Temperatura di degustazione: servire a 16-18°C.</p>
-            </div>
-            <div class="col-md-4">
-              <img src="https://github.com/saraperocchio/Test-web-design/blob/main/images/vini/grignolino-dasti.jpg?raw=true" alt="Prodotto 3">
-              <h3>Grignolino d'Asti D.O.C.</h3>
-              <p>Zona di produzione: Vinchio (AT).
-                Vitigno: 100% Grignolino.
-                Gradazione alcolica: 13 % vol.
-                Vinificazione: vinificazione attenta e controllata in botti di cemento vetrificato.
-                Caratteristiche organolettiche
-                Colore - Tipologia: rosso rubino; leggermente frizzante.
-                Profumo: vinoso, fresco, persistente con nota fruttata di albicocca, prugna e ciliegia.
-                Sapore: leggero, fine, asciutto leggermente tannico con raffinato retrogusto amarognolo.
-
-                Abbinamenti - Affinità gastronomiche: accompagna tutto il pasto, molto adatto con antipasti, minestre e pesce.
-                Temperatura di degustazione: servire a 16-18°C </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-  </main>
-  <footer>
-
-    <div id="informazioni-azienda">
-      <p>Perocchiovini
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-pinterest"></i>
-      </p>
     </div>
 
-  </footer>
+  </section>
+  </div>
+  <div class="spacer"></div>
+    
+
+  <!--prodotti-->
+  <section id="prodotti">
+    <section class="prodotti">
+      <div class="title-container">
+        <h1>I nostri vini</h1>
+      </div>
+      <div class="spacer"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="prodotti product-box">
+
+              <img src=https://raw.githubusercontent.com/saraperocchio/SIto-Web-PerocchioVIni/main/images/vini/barbera-dasti-la-ca-da-ruej.webp alt="Prodotto 1" class="prodotti-immagine">
+              <div class="spacer"></div>
+              <div class="prodotti-descrizione">
+                <h3>Barbera d'Asti D.O.C.G:"La Cà da Ruèj"</h3>
+                <div class="spacer"></div>
+                <p><b>Zona di produzione:</b> Vaglio Serra e Vinchio (AT).
+                  <b>Vitigno:</b> 100% Barbera .
+                  <b>Gradazione alcolica:</b> 13,5 % vol.
+                  <b>Vinificazione:</b> vinificazione attenta e controllata in botti di cemento vetrificato.<br>
+                  <b>Caratteristiche organolettiche</b><br>
+                  <b> Colore - Tipologia:</b> rosso intenso con riflessi porpora; fermo.
+                  <b>Profumo:</b> intensa vinosità, inebriante con caratteristiche dominanti fruttate di ciliegia, liquirizia, prugna e more.
+                  <b> Sapore: </b>tannico, corposo, asciutto, persistente, con una acidità ben equilibrata e senza spigolatura.
+
+                  <b>Abbinamenti - Affinità gastronomiche:</b> vino di grande versatilità, si abbina ai piatti della grande cucina tradizionale, ai piatti di carne, selvaggina, ideale con formaggi stagionati o erborinati.
+                  <b>Temperatura di degustazione:</b> servire a 16-18°C .
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="prodotti product-box">
+              <img src="https://raw.githubusercontent.com/saraperocchio/SIto-Web-PerocchioVIni/main/images/vini/barbera-del-monferrato.webp" alt="Prodotto 2" class="prodotti-immagine">
+              <div class="spacer"></div>
+              <div class="prodotti-descrizione">
+                <h3>Barbera del Monferrato D.O.C.</h3>
+                <div class="spacer"></div>
+                <p><b>Zona di produzione:</b> Vaglio Serra e Vinchio (AT).
+                  <b>Vitigno:</b> 100% Barbera.
+                  <b>Gradazione alcolica:</b> 13,5 % vol.
+                  <b>Vinificazione:</b> vinificazione attenta e controllata in botti di cemento vetrificato.<br>
+
+                  <b> Caratteristiche organolettiche </b><br>
+                  <b> Colore - Tipologia: </b> rosso rubino; leggermente frizzante.
+                  <b> Profumo: </b> vinoso e intenso con note fruttate.
+                  <b>Sapore: </b> asciutto, strutturato e di grande equilibrio.
+
+                  <b>Abbinamenti - Affinità gastronomiche: </b>accompagna egregiamente antipasti tradizionali, primi piatti importanti, carni rosse e grigliate.
+                  <b> Temperatura di degustazione: </b> servire a 16-18°C.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="col-md-6">
+
+            <div class="prodotti product-box">
+              <img src="https://raw.githubusercontent.com/saraperocchio/SIto-Web-PerocchioVIni/main/images/vini/barbera-del-monferrato.webp" alt="Prodotto 2" class="prodotti-immagine">
+              <div class="spacer"></div>
+              <div class="prodotti-descrizione">
+                <h3>Grignolino d'Asti D.O.C.</h3>
+                <div class="spacer"></div>
+                <p><b>Zona di produzione:</b> Vaglio Serra e Vinchio (AT).
+                  <b> Vitigno:</b> 100% Barbera.
+                  <b>Gradazione alcolica:</b> 13,5 % vol.
+                  <b>Vinificazione:</b> vinificazione attenta e controllata in botti di cemento vetrificato.<br>
+
+                  <b> Caratteristiche organolettiche</b><br>
+                  <b>Colore - Tipologia:</b> rosso rubino; leggermente frizzante.
+                  <b>Profumo: </b>vinoso e intenso con note fruttate.
+                  <b> Sapore:</b> asciutto, strutturato e di grande equilibrio.
+
+                  <b>Abbinamenti - Affinità gastronomiche: </b>accompagna egregiamente antipasti tradizionali, primi piatti importanti, carni rosse e grigliate.
+                  <b>Temperatura di degustazione: </b>servire a 16-18°C.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="prodotti product-box">
+              <img src="https://raw.githubusercontent.com/saraperocchio/SIto-Web-PerocchioVIni/main/images/vini/barbera-del-monferrato.webp" alt="Prodotto 2" class="prodotti-immagine">
+              <div class="spacer"></div>
+              <div class="prodotti-descrizione">
+                <h3>Monferrato Dolcetto D.O.C.</h3>
+                <div class="spacer"></div>
+                <p> <b>Zona di produzione:</b> Vinchio (AT).
+                  <b>Vitigno:</b> 100% Dolcetto.<br>
+                  <b>Gradazione alcolica:</b> 13,5 % vol..
+                  <b>Vinificazione:</b> vinificazione attenta e controllata in botti di cemento vetrificato.<br>
+                  <b>Caratteristiche organolettiche</b><br>
+                  <b>Colore - Tipologia:</b> rosso rubino intenso con riflessi violacei; leggermente frizzante.
+                  <b>Profumo:</b> vivacemente vinoso, ricco di note fruttate a bacca rossa.
+                  <b>Sapore:</b> asciutto, vellutato.
+
+                  <b>Abbinamenti - Affinità gastronomiche:</b> accompagna tutto il pasto, in particolare antipasti misti, paste con sughi vegetali o di carne, arrosti di carni bianche, umidi e brasati.
+                  <b>Temperatura di degustazione:</b> servire a 16-18°C .
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section></body>
+    <!--fine prodotti-->
+    <div class="spacer"></div>
+    <section id="gallery">
+      <div class="title-container">
+        <h1>Gallery</h1>
+      </div>
+      <div class="spacer"></div>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/gallery/galleria-fotografica-1.jpg?raw=true" alt="Immagine 1">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/gallery/galleria-fotografica-11.jpg?raw=true" alt="Immagine 2">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/gallery/galleria-fotografica-17.jpg?raw=true" alt="Immagine 3">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/gallery/galleria-fotografica-19.jpg?raw=true" alt="Immagine 4">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/gallery/galleria-fotografica-2.jpg?raw=true" alt="Immagine 5">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/gallery/galleria-fotografica-20.jpg?raw=true" alt="Immagine 6">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src=https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/gallery/galleria-fotografica-3.jpg?raw=true" alt="Immagine 7">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/gallery/galleria-fotografica-4.jpg?raw=true" alt="Immagine 8">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img src="https://github.com/saraperocchio/SIto-Web-PerocchioVIni/blob/main/images/gallery/galleria-fotografica-5.jpg?raw=true" alt="Immagine 9">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+    <!-- fine gallery -->
+    <!--torna all'inizio-->
+    <a href="#" class="back-to-top">Torna all'inizio</a>
+
+    <!-- contatti -->
+    <section class="contact-section" id="contatti">
+      <div class="container">
+        <h1 class="section-heading">Contattaci</h1>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Via Indirizzo, Città, CAP</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <p>+39 123 456789</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@esempio.com</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <!-- Campi del modulo di contatto -->
+        </form>
+      </div>
+    </section>
+
+    <!-- fine contatti -->
+    <!-- form-->
+
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Messaggio:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit">Invia</button>
+      </form>
+    </div>
+
+    <!--fine form-->
+    <div class="spacer"></div>
+    </div>
+
+    </div>
+
+    <footer>
+
+      <div id="informazioni-azienda">
+        <div class="spacer"></div>
+        <div class=footer-items-container>
+          <h3>Perocchiovini
+
+            <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+          </h3>
+
+        </div>
+        <div class="copyright">
+          &copy; 2023 Il tuo nome azienda. Tutti i diritti riservati.
+        </div>
+      </div>
+    </footer>
+    <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+    <!--fine script-->
+
 </body>
 
 </html>
+
